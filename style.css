@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background: url('background.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	position : relative;
+}
+.navbar{
+	background-color: rgb(85, 252, 149);
+	font-family: 'Itim', Times, serif;
+	color: white;
+} 
+.sideMenu {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background: rgb(0, 85, 26);
+	overflow-x: hidden;
+	transition: 0.25s;
+	padding-top: 60px;
+}
+.main-menu h2 {
+	text-align: center;
+	letter-spacing: 7px;
+	color: #fff;
+	background: #111;
+	padding: 20px 0;
+}
+.sideMenu a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	transition: 0.3s;
+	font-size: 18px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.sideMenu a i {
+	padding-right: 15px;
+}
+.main-menu a:hover {
+	color: #f1f1f1;
+	background: #111;
+}
+.sideMenu .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+#content-area {
+	transition: margin-left .5s;
+	padding: 16px;
+}
+.content-text {
+	padding: 100px 180px;
+	text-align: center;
+}
+.content-text h2 {
+	display: inline-block;
+	padding: 15px 35px;
+	text-transform: uppercase;
+	font-size: 50px;
+	color: black;
+}
+.content-text h4 {
+	text-transform: uppercase;
+	font-size: 50px;
+	margin: 0;
+	letter-spacing: 3px;
+}
+.btn-primary{
+    margin-left: 20px;
+}
+.btn-info{
+    margin-right: 20px;
+}
+.container{
+    margin-top:10px;
+}
+.btn:hover{
+    color:#fff;
+}
+.input-text:focus{
+    box-shadow: 0px 0px 0px;
+    border-color:#f8c146;
+    outline: 0px;
+}
+
+.form-control {
+    border: 1px solid #f8c146;
+}
+.text-white{
+    margin-left: 10px;
+}
+.logout-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.container3 {
+	flex:1;
+	display:flex;
+	flex-direction: column;
+
+}
+.content{
+	flex:1;
+	padding-bottom: 60px;
+}
+footer {
+	width : 100%;
+	/* bottom: 0px;
+	position : absolute; */
+	margin-top : 140px;
+}
+.items{
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+}
+.items li {
+    padding-right: 20px; 
+}
+.contactdetails {
+width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Change the last value (0.7) to adjust the translucency (0 to 1) */
+    border-radius: 20px;
+    text-align: center;
+	font-family: 'Itim', Times, serif;
+	font-size: large;
+ }
+ .gcetdetails
+ {
+	width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Change the last value (0.7) to adjust the translucency (0 to 1) */
+    border-radius: 20px;
+    text-align: center;
+	font-family: 'Itim', Times, serif;
+	font-size: large;
+ } 
+ .projectdetails
+ {
+	width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Change the last value (0.7) to adjust the translucency (0 to 1) */
+    border-radius: 20px;
+    text-align: center;
+	font-family: 'Itim', Times, serif;
+	font-size: large;
+ }
+#quantity{
+	width: 40px;
+
+}

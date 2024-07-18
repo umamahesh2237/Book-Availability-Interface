@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Login Styling.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .wrapper {
+            max-width: 1000px; 
+        }
+        .form-field input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="https://universitykart.b-cdn.net//Content/upload/admin/q0v1wtqn.v1r.jpg" alt="">
+        </div><br>
+        <div class="text-center mt-4 name" align="center">
+            <span>Geethanjali College of Engineering and Technology Library</span>
+        </div><br>
+        <form class="p-3 mt-3" onsubmit="return validateForm()" action="BookSearch.php">
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" name="userName" id="userName" placeholder="Username (Eg: 21R11A0501@gcet.edu.in)">
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" name="password" id="pwd" placeholder="Password (Eg: 21R11A0501)">
+            </div><br>
+            <button class="btn mt-3">Login</button>
+        </form><br>
+    </div>
+    <script>
+        function validateForm() {
+            // Get the values of the username and password fields
+            const userNameInput = document.getElementById('userName').value;
+            const passwordInput = document.getElementById('pwd').value;
+
+            // Define regular expressions for username and password validation
+            const userNameRegex = /^2\d[Rr]1\d[Aa]0\d\d\d@gcet\.edu\.in$/;
+            const passwordRegex = /^2\d[Rr]1\d[Aa]0\d\d\d$/;
+
+            // Check if the username and password match the required format
+            if (!userNameRegex.test(userNameInput)) {
+                alert('Invalid username format. Username should be in the format 21R11A0501@gcet.edu.in.');
+                return false; // Prevent form submission
+            }
+
+            if (!passwordRegex.test(passwordInput)) {
+                alert('Invalid password format. Password should be in the format 21R11A0501.');
+                return false; // Prevent form submission
+            }
+
+            return true; // Allow form submission if all conditions are met
+        }
+    </script>
+</body>
+</html>
